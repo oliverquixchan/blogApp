@@ -12,6 +12,7 @@
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push && npm run deploy",
     "logs:prod": "heroku logs --tail",
     "start:test": "cross-env NODE_ENV=test node index.js",
+    "test:e2e": "cypress run",
     "lint": "eslint . --fix",
     "cypress:open": "cypress open"
   },
