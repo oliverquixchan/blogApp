@@ -9,6 +9,6 @@ COPY . .
 RUN npm install --only=prod && \
     adduser --disabled-password appuser
 
-USER appuser
+USER appuser 
 
 CMD npm run start-prod
